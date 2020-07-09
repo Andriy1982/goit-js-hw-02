@@ -1,37 +1,16 @@
 const formatString = function (string) {
-  console.log(string.length);
-
-  let arrayWords = string.split("");
-  console.log(arrayWords);
+  const arrayWords = string.split("");
 
   if (string.length <= 40) {
-    // arrayWords = arrayWords.join("");
-    console.log(string);
-    // console.log(arrayWords);
+    return string;
   } else {
-    // arrayWords.splice(40);
-    // console.log(arrayWords);
-
-    // arrayWords.push("...");
-    // console.log(arrayWords);
-
-    // arrayWords = arrayWords.join("");
-    // console.log(arrayWords);
-
-    let createdArrayWords = arrayWords.splice(0, 40);
-    // createdArrayWords.join("");
-    createdArrayWords.push("...");
-    //     let createdArrayWordsnew = createdArrayWords.push("...");
-    //     console.log(createdArrayWordsnew);
-
-    createdArrayWords = createdArrayWords.join("");
-    // createdArrayWords.join("");
-    // console.log(createdArrayWords);
-    //     console.log(arrayWords);
-    return createdArrayWords;
+    arrayWords.splice(40, arrayWords.length - 40, "...");
+    return arrayWords.join("");
   }
 };
 
-// formatString("Curabitur hfjgd  dsgds  ligula sapien, tincidunt  fd hstoop");
-
-console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));
+console.log(
+  formatString(
+    "Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."
+  )
+);

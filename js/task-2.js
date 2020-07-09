@@ -5,8 +5,5 @@ const calculateEngravingPrice = function (message, pricePerWord) {
 };
 
 console.log(
-  calculateEngravingPrice(
-    "Proin sociis natoque et magnis parturient montes mus",
-    10
-  )
-);
+  calculateEngravingPrice("Donec orci lectus aliquam est magnis", 20)
+); // 120
