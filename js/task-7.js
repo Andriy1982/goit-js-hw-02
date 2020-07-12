@@ -1,3 +1,5 @@
+'use strict';
+
 const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 let message;
 
@@ -32,4 +34,7 @@ const addLogin = function (allLogins, login) {
   return message;
 };
 
-console.log(addLogin(logins, "robotGoogles"));
+console.log(addLogin(logins, 'Ajax'));
+console.log(addLogin(logins, 'robotGoogles'));
+console.log(addLogin(logins, 'Zod'));
+console.log(addLogin(logins, 'jqueryisextremelyfast'));
