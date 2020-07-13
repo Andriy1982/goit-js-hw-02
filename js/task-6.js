@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 let input;
 const numbers = [];
@@ -7,14 +7,11 @@ let total = 0;
 do {
   input = prompt("Введите число!");
 
-  if (Number.isNaN(+input) || input === "") {
+  if (Number.isNaN(+input)) {
     alert("Вы ввели некоректные данные");
     continue;
-  } else if (input === null) {
-    break;
-  } else {
-    numbers.push(+input);
   }
+  numbers.push(+input);
 } while (input !== null);
 
 if (numbers.length > 0) {
@@ -22,6 +19,4 @@ if (numbers.length > 0) {
     total += number;
   }
   console.log(`Общая сумма чисел равна ${total}`);
-} else {
-  console.log(`Масив пустой`);
 }
